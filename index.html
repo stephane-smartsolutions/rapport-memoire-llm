@@ -190,6 +190,8 @@ h2,[id]{scroll-margin-top:1rem}
 <p class="sommaire-titre">Sommaire</p>
 <ol>
 <li><a href="#sec-toc">Table des matières</a></li>
+<li><a href="#sec-resume">Cinq fournisseurs conservent plus que la conversation</a></li>
+<li><a href="#sec-tableau">Huit mécanismes décident de ce qui survit à un échange</a></li>
 <li><a href="#sec-index">Index</a></li>
 <li><a href="#sec-1">1. Le rapport couvre cinq fournisseurs et se lit avec un lexique de statut</a></li>
 <li><a href="#sec-2">2. Selon le canal, le même fournisseur applique deux régimes qui ne se déduisent jamais l&#x27;un de l&#x27;autre</a></li>
@@ -219,6 +221,8 @@ h2,[id]{scroll-margin-top:1rem}
 <main id="contenu" class="contenu">
 <h1 id="la-mémoire-des-services-dintelligence-artificielle-ce-quils-retiennent-combien-de-temps-et-qui-peut-le-lire">La mémoire des services d'intelligence artificielle : ce qu'ils retiennent, combien de temps, et qui peut le lire</h1>
 <h2 id="sec-toc">Table des matières</h2>
+<p><a href="#sec-resume">Cinq fournisseurs conservent plus que la conversation</a></p>
+<p><a href="#sec-tableau">Huit mécanismes décident de ce qui survit à un échange</a></p>
 <ol type="1">
 <li><a href="#sec-1">Le rapport couvre cinq fournisseurs et se lit avec un lexique de statut</a></li>
 <li><a href="#sec-2">Selon le canal, le même fournisseur applique deux régimes qui ne se déduisent jamais l'un de l'autre</a></li>
@@ -245,6 +249,294 @@ h2,[id]{scroll-margin-top:1rem}
 <li><a href="#sec-14">Se protéger quand on redoute d'être identifié</a></li>
 </ol>
 <p>Glossaire, puis sources.</p>
+<h2 id="sec-resume">Cinq fournisseurs conservent plus que la conversation</h2>
+<p>Un service d'intelligence artificielle retient plus qu'une conversation. Autour d'elle s'accumulent des instructions persistantes, une mémoire entre conversations, des fichiers indexés, un état d'agent, des historiques, des journaux d'organisation, une télémétrie d'usage. Chaque magasin a son horloge. Aucune ne s'aligne sur celle qu'on croit gouverner en supprimant un fil.</p>
+<p>La ligne de partage sépare les offres, non les fournisseurs. En grand public, trois des cinq entraînent sur les échanges sauf opposition et l'écrivent. Un quatrième l'écrit sans publier l'état de son réglage d'opposition. Anthropic seul fait exception. En professionnel, la position s'inverse chez les cinq. Elle se lève chez quatre : pouce levé ou baissé chez Anthropic et chez OpenAI, crédits contre l'autorisation d'entraîner et écran de consentement chez xAI, modèles expérimentaux ouverts par un administrateur chez Mistral. Rien de tel chez Google Workspace. Pour une conversation grand public active, Google seul publie une durée, dix-huit mois par défaut. Les durées dérogatoires commandent le risque : deux ans sur signalement, jusqu'à trois ans pour une conversation relue, cinq ans après un retour d'appréciation, six ans de flux d'activité, sept ans de scores de classification.</p>
+<p>Le cercle de lecture s'élargit avec l'offre. Le personnel autorisé du fournisseur relit. Une organisation relit par ses journaux, qui portent chez plusieurs les requêtes et réponses complètes. Quatre des cinq relèvent du droit des États-Unis : une réquisition y atteint ce qu'ils détiennent, où que soient leurs serveurs. Mistral y échappe, sous réserve de ses sous-traitants. Supprimer n'efface pas tout. Aucun réglage n'atteint le cache d'invites partagé, la restitution du texte par les vecteurs, la ré-identification par le style. Un entraînement ne rend pas ce qu'il a pris. La section 14 dit quoi y opposer.</p>
+<p>Ce panorama est arrêté au 10 août 2026. Une décision qui engage se prend sur les politiques du jour, revérifiées.</p>
+<h2 id="sec-tableau">Huit mécanismes décident de ce qui survit à un échange</h2>
+<div class="table-scroll"><table style="width:100%;">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr>
+<th>Offre</th>
+<th>Instructions conservées</th>
+<th>Mémoire entre conversations</th>
+<th>Fichiers et index rattachés</th>
+<th>Mémoire d'agent</th>
+<th>Durée de vie publiée</th>
+<th>Entraînement par défaut</th>
+<th>Journaux d'organisation</th>
+<th>Télémétrie d'usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anthropic, grand public</td>
+<td>oui</td>
+<td>(a)</td>
+<td>oui</td>
+<td>non établi</td>
+<td>non</td>
+<td>non</td>
+<td>non</td>
+<td>non établi</td>
+</tr>
+<tr>
+<td>Anthropic, Team</td>
+<td>oui</td>
+<td>(b)</td>
+<td>oui</td>
+<td>non établi</td>
+<td>non</td>
+<td>(f)</td>
+<td>non établi</td>
+<td>non établi</td>
+</tr>
+<tr>
+<td>Anthropic, Enterprise</td>
+<td>oui</td>
+<td>(b)</td>
+<td>oui</td>
+<td>non établi</td>
+<td>oui</td>
+<td>(f)</td>
+<td>(c)</td>
+<td>non établi</td>
+</tr>
+<tr>
+<td>Anthropic, plateforme de programmation</td>
+<td>non établi</td>
+<td>non</td>
+<td>non établi</td>
+<td>non</td>
+<td>oui</td>
+<td>non</td>
+<td>non établi</td>
+<td>non établi</td>
+</tr>
+<tr>
+<td>Anthropic, Claude Code</td>
+<td>oui</td>
+<td>(a)</td>
+<td>non établi</td>
+<td>non</td>
+<td>non établi</td>
+<td>non établi</td>
+<td>non établi</td>
+<td>(d)</td>
+</tr>
+<tr>
+<td>OpenAI, grand public</td>
+<td>oui</td>
+<td>(e)</td>
+<td>oui</td>
+<td>oui</td>
+<td>non</td>
+<td>oui</td>
+<td>non</td>
+<td>oui</td>
+</tr>
+<tr>
+<td>OpenAI, Business</td>
+<td>oui</td>
+<td>(e)</td>
+<td>oui</td>
+<td>non établi</td>
+<td>non établi</td>
+<td>(f)</td>
+<td>(c)</td>
+<td>non établi</td>
+</tr>
+<tr>
+<td>OpenAI, Enterprise et Edu</td>
+<td>oui</td>
+<td>(e)</td>
+<td>oui</td>
+<td>non établi</td>
+<td>oui</td>
+<td>(f)</td>
+<td>(c)</td>
+<td>non établi</td>
+</tr>
+<tr>
+<td>OpenAI, plateforme de programmation</td>
+<td>non établi</td>
+<td>non établi</td>
+<td>oui</td>
+<td>oui</td>
+<td>oui</td>
+<td>non</td>
+<td>non établi</td>
+<td>oui</td>
+</tr>
+<tr>
+<td>Google, grand public</td>
+<td>oui</td>
+<td>(a)</td>
+<td>oui</td>
+<td>non</td>
+<td>oui</td>
+<td>oui</td>
+<td>non</td>
+<td>oui</td>
+</tr>
+<tr>
+<td>Google, Workspace</td>
+<td>non</td>
+<td>non</td>
+<td>oui</td>
+<td>non établi</td>
+<td>oui</td>
+<td>non</td>
+<td>oui</td>
+<td>non établi</td>
+</tr>
+<tr>
+<td>Google, Gemini Enterprise</td>
+<td>oui</td>
+<td>(a)</td>
+<td>oui</td>
+<td>oui</td>
+<td>non établi</td>
+<td>non établi</td>
+<td>(c)</td>
+<td>non établi</td>
+</tr>
+<tr>
+<td>Google, plateforme d'agents</td>
+<td>non établi</td>
+<td>oui</td>
+<td>non établi</td>
+<td>oui</td>
+<td>oui</td>
+<td>non établi</td>
+<td>(c)</td>
+<td>oui</td>
+</tr>
+<tr>
+<td>Mistral, grand public</td>
+<td>oui</td>
+<td>oui</td>
+<td>oui</td>
+<td>non établi</td>
+<td>non</td>
+<td>oui</td>
+<td>non</td>
+<td>oui</td>
+</tr>
+<tr>
+<td>Mistral, Team</td>
+<td>oui</td>
+<td>oui</td>
+<td>oui</td>
+<td>non établi</td>
+<td>oui</td>
+<td>(f)</td>
+<td>non</td>
+<td>oui</td>
+</tr>
+<tr>
+<td>Mistral, Enterprise</td>
+<td>oui</td>
+<td>oui</td>
+<td>oui</td>
+<td>non établi</td>
+<td>oui</td>
+<td>(f)</td>
+<td>oui</td>
+<td>oui</td>
+</tr>
+<tr>
+<td>Mistral, plateforme de programmation</td>
+<td>non établi</td>
+<td>non établi</td>
+<td>oui</td>
+<td>oui</td>
+<td>non établi</td>
+<td>non</td>
+<td>non établi</td>
+<td>oui</td>
+</tr>
+<tr>
+<td>xAI, site et applications mobiles</td>
+<td>(g)</td>
+<td>(e)</td>
+<td>oui</td>
+<td>non établi</td>
+<td>non</td>
+<td>(h)</td>
+<td>non</td>
+<td>oui</td>
+</tr>
+<tr>
+<td>xAI, Grok dans X</td>
+<td>(i)</td>
+<td>(i)</td>
+<td>(i)</td>
+<td>(i)</td>
+<td>(i)</td>
+<td>(i)</td>
+<td>(i)</td>
+<td>(i)</td>
+</tr>
+<tr>
+<td>xAI, Grok Business et Enterprise</td>
+<td>non établi</td>
+<td>non établi</td>
+<td>non établi</td>
+<td>non établi</td>
+<td>non</td>
+<td>(j)</td>
+<td>oui</td>
+<td>oui</td>
+</tr>
+<tr>
+<td>xAI, plateforme de programmation</td>
+<td>non établi</td>
+<td>oui</td>
+<td>oui</td>
+<td>oui</td>
+<td>oui</td>
+<td>(f)</td>
+<td>(c)</td>
+<td>non établi</td>
+</tr>
+<tr>
+<td>xAI, Grok Build</td>
+<td>oui</td>
+<td>(k)</td>
+<td>non établi</td>
+<td>oui</td>
+<td>non</td>
+<td>(f)</td>
+<td>non établi</td>
+<td>(d)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Comment se lisent ces valeurs.</strong> Oui : le rapport établit que le mécanisme opère sur cette offre, et pour la cinquième colonne qu'une durée de vie est publiée. Non : le rapport établit qu'il n'opère pas, et pour la cinquième colonne qu'aucune durée n'est publiée. Non établi : l'enquête ne tranche cette case ni dans un sens ni dans l'autre pour cette offre, et rien ne s'y déduit de l'offre voisine ni de la surface grand public du même fournisseur, la section 2 posant que les deux régimes ne se déduisent jamais l'un de l'autre ; la section 13 recense celles de ces cases que l'enquête a fermées en nommant les voies suivies. Une lettre entre parenthèses renvoie à la précision correspondante, sous le tableau, et le statut de chaque fait se lit dans la section qu'elle cite.</p>
+<p><strong>(a) La mémoire s'active sans geste de l'utilisateur.</strong> Chez Anthropic, la génération de mémoire est active par défaut sur Free, Pro et Max, et la première catégorie retenue est le rôle et le contexte professionnel. Sur Claude Code, la mémoire automatique est active par défaut, stockée localement par dépôt et rechargée à chaque session. Chez Google, elle est active par défaut en grand public, et dans Gemini Enterprise elle est activée d'emblée sans pouvoir être désactivée, l'administrateur seul la coupant pour tous. Section 3.</p>
+<p><strong>(b) Sur claude.ai professionnel, l'état par défaut de la mémoire n'est pas établi.</strong> Ce qui l'est porte sur le contrôle : un propriétaire Enterprise désactive la mémoire pour tous et supprime du même geste les synthèses existantes, quand les plans Team n'ont pas ce contrôle. L'enquête ne tranche pas l'état de la fonction pour un membre dont l'organisation n'a rien réglé, et le défaut publié pour Free, Pro et Max ne se reporte pas sur ces offres. Sections 3 et 8.</p>
+<p><strong>(c) Le journal porte le contenu des échanges, pas seulement les actes d'administration.</strong> Chez Anthropic, l'interface de conformité expose conversations, fichiers, projets et transcriptions de sessions distantes, et le flux d'activité de l'organisation est conservé six ans. Chez OpenAI, un administrateur Business consulte, exporte et supprime les conversations de ses membres, quand Enterprise et Edu passent par la plateforme de conformité. Chez Google, le rapport traite d'un seul tenant le côté plateforme, sans séparer Gemini Enterprise de la plateforme d'agents : les journaux d'usage, qui doivent être activés, enregistrent le texte des questions et des réponses, l'éditeur avertissant lui-même que les données sensibles n'en sont pas filtrées, et le conteneur de journaux par défaut conserve trente jours, réglables d'un jour à dix ans. Chez xAI, une journalisation activable par clé rend relisibles dans la console la requête et la réponse complètes, quand le journal d'audit de la console, lui, ne porte que les actes d'administration. Section 8.</p>
+<p><strong>(d) La télémétrie du poste de travail peut emporter le contenu.</strong> Sur Claude Code, elle ne journalise pas le contenu par défaut, mais les variables qui l'activent peuvent être posées par la configuration gérée de l'organisation, et l'une d'elles émet les corps de requête complets, historique entier de la conversation compris. Sur Grok Build, une télémétrie existe, puisque sa désactivation est citée comme exemple de politique critique à épingler par l'organisation, et ni son contenu, ni son état par défaut, ni le nom de la clé qui la gouverne ne sont publiés (recherche menée sans résultat). Section 9.</p>
+<p><strong>(e) L'état par défaut de la mémoire n'est pas établi.</strong> Chez OpenAI, il a été publié le 13 février 2024, actif par défaut, puis la phrase a disparu de la page d'aide entre le 23 août et le 6 septembre 2024, le reste du paragraphe subsistant mot pour mot ; la référence à l'historique des conversations est arrivée en 2025 inactive par défaut dans l'Espace économique européen, en Suisse, en Norvège, en Islande et au Liechtenstein, et activée d'office ailleurs. Aucun de ces énoncés ne décrit un compte ouvert à la date d'arrêt. Du côté professionnel, le seul défaut publié porte sur la mémoire améliorée en Enterprise et Edu, activée d'elle-même au terme d'un accès anticipé d'environ deux semaines sauf opposition de l'administrateur, ce qui documente une variante et non la fonction. Chez xAI, la fonction est observable dans le produit, ses catégories couvrant l'identité, l'entourage et l'employeur <span class="cert cert-mesure">(mesuré)</span>, et aucune page de l'éditeur ne dit l'état du réglage (recherche menée sans résultat). Sections 3 et 13.</p>
+<p><strong>(f) Le régime professionnel se lève par un geste.</strong> Chez Anthropic, un pouce levé ou baissé fait basculer la conversation entière dans une conservation de cinq ans utilisable pour la recherche et l'entraînement, en commercial comme en grand public, et un propriétaire Team ou Enterprise coupe cette voie par le réglage d'évaluation des conversations. Chez OpenAI, les données professionnelles servent si le client y a explicitement adhéré, notamment par ce même retour d'appréciation. Chez Mistral, l'activation des modèles expérimentaux Labs par l'administrateur autorise l'usage des données pour entraîner les modèles, quels que soient le plan souscrit et les réglages d'opposition, sans que le membre voie passer la décision. Chez xAI, l'éditeur écrit qu'il peut offrir des crédits gratuits en échange de l'autorisation d'entraîner sur les données professionnelles, et son outil en ligne de commande présente au développeur lui-même un écran de consentement à la conservation, indépendamment de ce que son organisation a signé. Sections 2 et 7.</p>
+<p><strong>(g) Le champ d'instructions personnalisées de xAI est mesuré sur le site.</strong> Son plafond de 12 000 caractères est porté par un paramètre de la configuration servie par la page d'accueil de grok.com <span class="cert cert-mesure">(mesuré)</span>, soit plus du double du plafond le plus élevé publié par OpenAI. Aucune page de l'éditeur ne décrit cette fonction, ni sa portée sur les conversations déjà ouvertes, ni le sort de ces instructions au regard de l'entraînement et de la conservation (recherche menée sans résultat). Aucune source n'établit le même champ sur les applications mobiles. Section 4.</p>
+<p><strong>(h) xAI écrit qu'il entraîne, sans publier l'état de son réglage.</strong> L'éditeur écrit qu'il peut employer les contenus et les interactions avec le service, invites et recherches comprises, avec les réponses du modèle, pour entraîner ses modèles, et il nomme aussitôt le contrôle qui s'y oppose <span class="cert cert-documente">(documenté)</span>. Aucune phrase ne dit dans quel état ce réglage se trouve à l'ouverture d'un compte : sa formulation le présente comme déjà positionné, ce qui est cohérent avec un état actif et ne l'établit pas <span class="cert cert-deduit">(déduit)</span>. Trois trous bornent l'opposition, le retour d'appréciation, l'usage sans compte hors d'Europe et le mode de construction d'applications, où le mode privé n'est pas disponible. Sections 2, 7 et 13.</p>
+<p><strong>(i) Grok dans le réseau social relève d'un autre responsable de traitement.</strong> Cette surface est servie par une entité distincte, ce qui interdit de lui appliquer telles quelles les réponses valant pour le site et pour les applications, et cette réserve porte sur les huit colonnes. Deux régimes s'y distinguent, que le rapport tient séparés. La personnalisation transfère à l'éditeur le profil public, les publications, les plus vues d'entre elles, l'engagement et les intérêts déjà inférés par le réseau, avec les entrées et les résultats de Grok dans le réseau. L'entraînement, lui, porte sur les publications, les métadonnées d'engagement, les espaces audio et les profils publics, ainsi que sur les interactions avec Grok dans le réseau, le réglage d'opposition étant logé chez le réseau et son état par défaut n'étant publié nulle part (recherche menée sans résultat). La liaison des deux comptes transmet le profil public, la date de naissance, l'état d'abonnement et l'historique de conversation tenu dans le réseau. Sections 9 et 12.</p>
+<p><strong>(j) Le régime d'entraînement des espaces d'équipe de xAI n'est établi nulle part.</strong> Aucune page consultée ne dit ce qu'il advient, au regard de l'entraînement, des conversations tenues dans un espace de travail d'équipe sur le site, ni si le réglage d'amélioration du modèle de l'espace personnel y a un équivalent ou un effet, le guide se bornant à renvoyer aux conditions entreprise pour les garanties de confidentialité (recherche menée sans résultat). Sections 7 et 13.</p>
+<p><strong>(k) La mémoire entre sessions de Grok Build est publiée inactive par défaut.</strong> La table des variables d'environnement donne à zéro celle qui l'active, et la table des réglages porte la mention default off sur l'interrupteur principal de cette mémoire <span class="cert cert-documente">(documenté)</span>. C'est le seul état par défaut à la fois publié et négatif du rapport, là où la surface grand public du même éditeur laisse le sien dans le silence. Quand elle est active, cette mémoire s'écrit dans des fichiers locaux, à l'échelle de l'espace de travail ou de la machine <span class="cert cert-deduit">(déduit)</span>. Section 3.</p>
 <h2 id="sec-index">Index</h2>
 <p><strong>Par axe de mécanisme.</strong> Quinze axes, chacun renvoyant à la section qui le traite ; le quinzième ne concerne qu'un fournisseur, les quatorze autres valent pour les cinq.</p>
 <div class="table-scroll"><table>
