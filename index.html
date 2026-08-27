@@ -190,7 +190,7 @@ h2,[id]{scroll-margin-top:1rem}
 <p class="sommaire-titre">Sommaire</p>
 <ol>
 <li><a href="#sec-toc">Table des matières</a></li>
-<li><a href="#sec-resume">Cinq fournisseurs conservent plus que la conversation</a></li>
+<li><a href="#sec-resume">Résumé exécutif</a></li>
 <li><a href="#sec-tableau">Huit mécanismes décident de ce qui survit à un échange</a></li>
 <li><a href="#sec-index">Index</a></li>
 <li><a href="#sec-1">1. Le rapport couvre cinq fournisseurs et se lit avec un lexique de statut</a></li>
@@ -221,7 +221,7 @@ h2,[id]{scroll-margin-top:1rem}
 <main id="contenu" class="contenu">
 <h1 id="la-mémoire-des-services-dintelligence-artificielle-ce-quils-retiennent-combien-de-temps-et-qui-peut-le-lire">La mémoire des services d'intelligence artificielle : ce qu'ils retiennent, combien de temps et qui peut le lire</h1>
 <h2 id="sec-toc">Table des matières</h2>
-<p><a href="#sec-resume">Cinq fournisseurs conservent plus que la conversation</a></p>
+<p><a href="#sec-resume">Résumé exécutif</a></p>
 <p><a href="#sec-tableau">Huit mécanismes décident de ce qui survit à un échange</a></p>
 <ol type="1">
 <li><a href="#sec-1">Le rapport couvre cinq fournisseurs et se lit avec un lexique de statut</a></li>
@@ -249,11 +249,59 @@ h2,[id]{scroll-margin-top:1rem}
 <li><a href="#sec-14">Se protéger quand on redoute d'être identifié</a></li>
 </ol>
 <p>Glossaire, puis sources.</p>
-<h2 id="sec-resume">Cinq fournisseurs conservent plus que la conversation</h2>
-<p>Un service d'intelligence artificielle retient plus qu'une conversation. Autour d'elle s'accumulent des instructions persistantes, une mémoire entre conversations, des fichiers indexés, un état d'agent, des historiques, des journaux d'organisation, une télémétrie d'usage. Chaque magasin a son horloge. Aucune ne s'aligne sur celle qu'on croit gouverner en supprimant un fil.</p>
-<p>La ligne de partage sépare les offres, non les fournisseurs. En grand public, trois des cinq entraînent sur les échanges sauf opposition et l'écrivent, l'un des trois publiant deux pages qui divergent sur le régime de son plan Pro. Un quatrième l'écrit sans publier l'état de son réglage d'opposition. Anthropic seul fait exception. En professionnel, la position s'inverse chez les cinq. Elle se lève chez quatre : pouce levé ou baissé chez Anthropic et chez OpenAI, crédits contre l'autorisation d'entraîner et écran de consentement chez xAI, décision d'administrateur chez Anthropic comme chez Mistral, le programme partenaire de développement de l'un et les modèles expérimentaux de l'autre. Une voie de plus ne se lève par aucun geste : sur la surface de xAI qu'un tiers héberge, le régime d'entraînement se lit dans le compte de ce tiers. Rien de tel chez Google Workspace. Pour une conversation grand public active, Google seul publie une durée, dix-huit mois par défaut. Les durées dérogatoires commandent le risque : deux ans sur signalement, jusqu'à trois ans pour une conversation relue, cinq ans après un retour d'appréciation, six ans de flux d'activité, sept ans de scores de classification, dix ans de facturation. Deux régimes qu'une politique publie échappent même à cette liste faute de terme : la conservation d'une organisation Anthropic qui n'a fixé aucune période, et les objets de l'interface d'assistants d'OpenAI.</p>
-<p>Le cercle de lecture s'élargit avec l'offre. Le personnel autorisé du fournisseur relit. Une organisation relit par ses journaux, qui portent chez plusieurs les requêtes et réponses complètes. Quatre des cinq relèvent du droit des États-Unis : une réquisition y atteint ce qu'ils détiennent, où que soient leurs serveurs. Mistral y échappe en propre, et deux voies rouvrent la question : quatre entités américaines au moins figurent à la liste de ses sous-traitants, et son point d'entrée américain héberge aux États-Unis les données du client qui le choisit. Supprimer n'efface pas tout. Aucun réglage n'atteint le cache d'invites partagé, la restitution du texte par les vecteurs, la ré-identification par le style. Un entraînement ne rend pas ce qu'il a pris. La section 14 dit quoi y opposer.</p>
-<p>Ce panorama est arrêté au 26 août 2026. Une décision qui engage se prend sur les politiques du jour, revérifiées.</p>
+<h2 id="sec-resume">Résumé exécutif</h2>
+<p>Un service d'intelligence artificielle conserve plus que la conversation : instructions personnalisées, mémoire entre conversations, fichiers indexés, mémoire des agents, historiques, journaux de l'organisation, télémétrie d'usage. Chaque magasin a son horloge, souvent non publiée. Supprimer une conversation n'efface ni ce qui en a été retenu, ni toujours la conversation. Entraînement, rétention et cercle de lecture dépendent davantage de l'offre que du fournisseur ; le droit suit le fournisseur.</p>
+<div class="table-scroll"><table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>Fournisseur</th>
+<th>Entraînement, grand public</th>
+<th>Entraînement, professionnel</th>
+<th>Ce que votre organisation peut relire</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Anthropic</td>
+<td>Sur choix de l'utilisateur, pouce levé ou baissé, signalement par les filtres de sûreté, ou programme de test</td>
+<td>Non par défaut. S'active par un pouce et, pour les sessions Claude Code, par l'adhésion de l'administrateur au programme partenaire de développement</td>
+<td>Enterprise et Console, pas Team : transcription complète par l'interface de conformité, appels d'outils compris, Claude Code inclus sauf sur le web</td>
+</tr>
+<tr>
+<td>OpenAI</td>
+<td>Oui par défaut ; réglage « Improve the model for everyone » pour refuser</td>
+<td>Non par défaut. S'active par un pouce. Hors entraînement, le traçage de la trousse d'agents envoie entrées et sorties par défaut</td>
+<td>Business : l'administrateur consulte, exporte et supprime les conversations. Enterprise, Edu, Healthcare : journal de conformité</td>
+</tr>
+<tr>
+<td>Google</td>
+<td>Oui tant que « Keep Activity » est actif, avec relecture humaine</td>
+<td>Non par clause pour Workspace et la plateforme d'agents, levée par permission du client ; non établi pour Gemini Enterprise</td>
+<td>Gemini Enterprise et plateforme d'agents : journaux d'usage, à activer, avec le contenu. Workspace : journal sans contenu, six mois, non supprimable</td>
+</tr>
+<tr>
+<td>Mistral</td>
+<td>Oui sauf opposition sur Free, Pro et Education ; une seconde page du même éditeur dit l'inverse pour Pro. Un retour d'appréciation vaut autorisation, quel que soit le plan</td>
+<td>Non par défaut, sauf le palier gratuit de la plateforme. Les modèles expérimentaux Labs, activés par l'administrateur, autorisent l'entraînement malgré l'opposition du membre</td>
+<td>Journal d'audit (Enterprise, actif par défaut) : conversations, réglages, appels d'outils, sans le contenu. Les événements d'observabilité, s'ils sont activés, portent invites et réponses</td>
+</tr>
+<tr>
+<td>xAI</td>
+<td>Le droit d'entraîner est écrit ; l'état par défaut du réglage « Improve the model » n'est pas publié. Un retour d'appréciation lève l'opposition, quel que soit le plan</td>
+<td>Non par défaut. S'active contre des crédits (organisation) ou par un écran de consentement de l'outil en ligne de commande (développeur). Grok Bot, hébergé par Cursor, suit le compte Cursor</td>
+<td>Journalisation par clé, à activer : requêtes et réponses complètes</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Durées.</strong> Conversation grand public active : seul Google publie une durée, 18 mois par défaut (3 mois, 36 mois ou jamais). Hors du contrôle de l'utilisateur : Google, 3 ans pour une conversation relue par un humain, même supprimée ; Anthropic, 2 ans si signalée, 5 ans avec un pouce, 7 ans pour ses scores de classification, 6 ans pour le flux d'activité de conformité ; Mistral, 10 ans pour la facturation. Sans terme : une organisation Anthropic Enterprise sans durée fixée ; les objets de l'interface d'assistants d'OpenAI non supprimés ; chez OpenAI et xAI, la conversation dépersonnalisée, hors du champ de la suppression, alors que le style reste attribuable.</p>
+<p><strong>Accès de l'État.</strong> Anthropic, OpenAI, Google et xAI relèvent du droit des États-Unis : le CLOUD Act (article 2713) atteint ce qu'ils détiennent, où que soient leurs serveurs ; une injonction judiciaire prime sur toute politique de rétention. Mistral y échappe comme entité, mais a au moins quatre sous-traitants américains et un point d'entrée hébergé aux États-Unis.</p>
+<p><strong>Hors de portée de tout réglage.</strong> Le cache d'invites, dont le partage entre clients est mesuré chez OpenAI ; le texte que les vecteurs d'indexation restituent ; la ré-identification par le style ; ce qu'un entraînement a absorbé. Première des sept recommandations de la section 14 : pour ce qui ne peut pas être perdu, ne pas confier le texte à un service tiers. Arrêté au 26 août 2026.</p>
 <h2 id="sec-tableau">Huit mécanismes décident de ce qui survit à un échange</h2>
 <div class="table-scroll"><table style="width:100%;">
 <colgroup>
